@@ -1,0 +1,2 @@
+# CDN
+Temporary CDN
