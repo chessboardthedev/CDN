@@ -1,0 +1,126 @@
+html, body {
+        height: 100%;
+      }
+
+      body {
+        overflow: hidden;
+        background-color: #111;
+      }
+
+      div.container-fluid {
+       position: relative;
+       top: 40%;
+       left: 50%;
+     }
+
+     h2 {
+       transform: translate(-50%, 100%);
+       text-align: center;
+       margin: 0 auto;
+       padding: 5px 0;
+       margin-top: 20px;
+       position: relative;
+       font: normal 30px/1em Helvetica, Arial, sans-serif;
+       color: #EFEFEF;
+     }
+
+     div.loader {
+      margin: 0 auto;
+      padding: 5px 0;
+      position: relative !important;
+      font: normal 30px/1em Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      color: #EFEFEF;
+    }
+    div.loader:after {
+      content: "";
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      -moz-animation: wormsPong cubic-bezier(0.77, 0, 0.175, 1) 0.8s infinite;
+      -webkit-animation: wormsPong cubic-bezier(0.77, 0, 0.175, 1) 0.8s infinite;
+      animation: wormsPong cubic-bezier(0.77, 0, 0.175, 1) 0.8s infinite;
+      background-color: yellow;
+      position: absolute !important;
+      bottom: 0;
+      left: 0;
+      width: 4px;
+      height: 4px;
+    }
+
+    @-moz-keyframes wormsPong {
+      25% {
+        width: 100%;
+      }
+      50% {
+        width: 0;
+        left: auto;
+        right: 0;
+      }
+      75% {
+        width: 100%;
+      }
+      100% {
+        width: 0;
+        right: auto;
+        left: 0;
+      }
+    }
+    @-webkit-keyframes wormsPong {
+      25% {
+        width: 100%;
+      }
+      50% {
+        width: 0;
+        left: auto;
+        right: 0;
+      }
+      75% {
+        width: 100%;
+      }
+      100% {
+        width: 0;
+        right: auto;
+        left: 0;
+      }
+    }
+    @keyframes wormsPong {
+      25% {
+        width: 100%;
+      }
+      50% {
+        width: 0;
+        left: auto;
+        right: 0;
+      }
+      75% {
+        width: 100%;
+      }
+      100% {
+        width: 0;
+        right: auto;
+        left: 0;
+      }
+    }
+
+    div.loader {
+      position: absolute !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      -webkit-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+    }
+
+    footer {
+      position:absolute;
+      bottom:0;
+      width:100%;
+      font: normal 15px/1em Helvetica, Arial, sans-serif;
+      color: #EFEFEF;
+    }
+
+    a, a:hover {
+      font: inherit;
+      color: inherit;
+      text-decoration: none;
+    }
